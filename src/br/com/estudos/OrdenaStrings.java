@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+//interfaces funcionais mais utilizadas:
+//Function, Predicate e Consumer
 //Lambda pode ser convertido para um interface funcional compativel
 public class OrdenaStrings {
     public static void main(String[] args) {
