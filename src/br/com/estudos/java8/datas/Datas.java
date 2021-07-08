@@ -1,4 +1,4 @@
-package br.com.estudos;
+package br.com.estudos.java8.datas;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class Datas {
     public static void main(String[] args) {
 
-        LocalDate hoje = LocalDate.now();
+        LocalDate hoje= LocalDate.now();
         System.out.println(hoje);
 
         LocalDate olimpiadasRio = LocalDate.of(2016, Month.JUNE, 5);
@@ -25,7 +25,7 @@ public class Datas {
         String valorFormatado = proximasOlimpiadas.format(formatador);
         System.out.println(valorFormatado);
 
-        DateTimeFormatter formatadorComHoras = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm");
+        DateTimeFormatter formatadorComHoras = DateTimeFormatter.ISO_DATE;
 
 
         LocalDateTime agora = LocalDateTime.now();

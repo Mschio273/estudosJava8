@@ -1,4 +1,4 @@
-package br.com.estudos;
+package br.com.estudos.java8.rascunho;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,13 +7,11 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-//interfaces funcionais mais utilizadas:
-//Function, Predicate e Consumer
 //Lambda pode ser convertido para um interface funcional compativel
 public class OrdenaStrings {
     public static void main(String[] args) {
 
-        List<String> palavras = new ArrayList<String>();
+        List<String> palavras = new ArrayList<>();
 
         palavras.add("alura online");
         palavras.add("editora casa do codigo");

@@ -1,4 +1,4 @@
-package br.com.estudos;
+package br.com.estudos.java8.rascunho;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class ExemploCursos {
     public static void main(String[] args) {
 
-        List<Curso> cursos = new ArrayList<Curso>();
+        List<Curso> cursos = new ArrayList<>();
 
         cursos.add(new Curso("Python", 45));
         cursos.add(new Curso("JavaScript", 150));
@@ -33,6 +33,8 @@ public class ExemploCursos {
                 .findAny()
                 .ifPresent(c -> System.out.println(c.getNome()));
 
+
+
 //        optionalCurso.ifPresent(c -> System.out.println(c.getNome()));
 
 //        List<Curso> resultado = cursos.stream()
@@ -47,7 +49,6 @@ public class ExemploCursos {
                 .forEach((nome, alunos) -> System.out.println(nome + " tem " + alunos + " alunos"));
 
 //        System.out.println(map);
-
 
     }
 }
